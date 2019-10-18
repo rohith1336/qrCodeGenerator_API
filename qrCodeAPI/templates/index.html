@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+QR Code API
+</title>
+<link rel=stylesheet href="../static/style.css" type="text/css">
+</head>
+<body>
+<center>
+<h1>QR Code Generator</h1>
+<form action="{{request.path}}" method="POST">
+<input type="text" name="userinput">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+<br><br>
+<div class="qr">
+<hr />
+<br>
+<img src="{{qrcode}}"><br><br>
+<p>{{message}}</p>
+<br><br>
+<hr />
+</div>
+</center>
+</body>
+</html>
